@@ -1,0 +1,49 @@
+<%- include('partials/header') %>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Placement Assistant Software</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+          <div class="container">
+            <a class="navbar-brand d-md-none" href="#">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="#offcanvasLabel">Aperture</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1 justify-content-between"></li>
+                  <li class="nav-item"><a class="nav-link" href="/mainPage">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/details">Add your Details</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/feedback">Feedback</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    <div class="container">
+    <h1>Your Feedback </h1>
+    <form action="/sucessfull">
+        <div class="form-group">
+            <label class="form-label" for="new">Title</label>
+            <input class="form-control" type="text" name="new" required>
+            <label class="form-label" for="postBody">Post</label>
+            <textarea class="form-control" name="postBody" cols="40" rows="5" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" name="button">Publish</button>
+</form>
+</div>
+</body>
+</html>
